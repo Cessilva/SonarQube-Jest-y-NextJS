@@ -151,4 +151,3 @@ Una vez tu configuración esta lista , tienes la opción de colocarla en tu sona
 
 # ¡ Listo tu proyecto tiene covertura !
 
-NODE_ENV=test npm run test
