@@ -131,6 +131,8 @@ Para este punto tu `npm test` debe funcionar correctamente:
 En el archivo comprimido con nombre `sonar-scanner.zip` entra a directorio
 sonar-scanner/conf/sonar-scanner.properties , este sera el directorio donde podremos poner nuestras configuraciones, pero debemos cambiarlas cada que subamos un proyecto pues son globales o en su defecto colocar la configuracion en terminal:
 
+> Nota: el archivo compartido es para macOS,en caso de ocupar otro sistema operativo, descargar el correspondiente
+
 > **sonar-scanner.properties vs sonar-project.properties**
 Puede poner los mismos valores en ambos, pero no debería hacerlo. El archivo sonar-scanner.properties está a nivel de servidor y solo debe contener valores que sean correctos para todos los proyectos, como el valor sonar.host.url.
 Por otro lado, sonar-project.properties es un archivo a nivel de proyecto y debe contener valores específicos del proyecto, como la ubicación de cada proyecto sonar.sources y sonar.projectKey, etc.
