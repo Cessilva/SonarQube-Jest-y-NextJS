@@ -91,7 +91,7 @@ Ejecutamos el comando para hacer el testeo:
  npm test
   ```
   
-Podemos tener un resultado como el siguiente: 
+Podemos tener un resultado como el siguiente:   
 ![npmTest](./public/sources/test.png)
 
 
@@ -123,7 +123,7 @@ npm i --save-dev @babel/plugin-transform-runtime @babel/preset-env @babel/preset
 ```
 > Note:  Jest ejecuta el código en su proyecto JavaScript, pero si utilizas alguna sintaxis no compatible con Node de forma nativa (como JSX, TypeScript, Vue template), entonces debes transformar ese código en JavaScript plano, similar a lo que harías al compilar para el Navegador. Esta es una yuda que nos ofrece Babel.
 
-Para este punto tu `npm test` debe funcionar correctamente:
+Para este punto tu `npm test` debe funcionar correctamente:   
 ![npmTestCorrect](./public/sources/testMine.png)
 
 
@@ -136,7 +136,8 @@ Puede poner los mismos valores en ambos, pero no debería hacerlo. El archivo so
 Por otro lado, sonar-project.properties es un archivo a nivel de proyecto y debe contener valores específicos del proyecto, como la ubicación de cada proyecto sonar.sources y sonar.projectKey, etc.
 
 ## Propiedades a configurar en tu proyecto
-- sonar.projectKey = projectKey es simplemente el identificador único de tu proyecto dentro de SonarQube. Eres libre de elegir lo que quieras, siempre que sea único. Lo encontrarás al final del scroll de tu Project Information ![projectInformation](./public/sources/keyproject.png)
+- sonar.projectKey = projectKey es simplemente el identificador único de tu proyecto dentro de SonarQube. Eres libre de elegir lo que quieras, siempre que sea único. Lo encontrarás al final del scroll de tu Project Information    
+![projectInformation](./public/sources/keyproject.png)
 - sonar.sources = Se refere a los archivos que se van a tener en cuenta al ejecutar el sonar, por default se ocupa  `sonar.sources=.`, o src en el caso de ser una app React, para el caso de Next , especifica las rutas a las que se aplicara la covertura, por ejemplo: `sonar.sources = ./components,./pages,...`
 - sonar.host.url = Se refiere al host y puerto de tu sonar, por ejemplo: `sonar.host.url = http://10.10.10.51:5000 `
 - sonar.login = Si desea reforzar la seguridad al no proporcionar las credenciales de un usuario real de SonarQube para ejecutar su escaneo de código o invocar los servicios web, puede proporcionar un token de usuario como reemplazo del inicio de sesión del usuario. Esto aumentará la seguridad de su instalación al no dejar pasar su contraseña de usuario de análisis por su red. Para generarlo, selecciona tu usuario y en el aparado account, selecciona security y genera tu token , se debe ver de la siguiente forma: `sonar.login=8592b1361234567216x55b09b7897290prueba44a0` ![login](./public/sources/generateToken.png)
