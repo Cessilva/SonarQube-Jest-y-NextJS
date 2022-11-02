@@ -149,7 +149,7 @@ Por otro lado, sonar-project.properties es un archivo a nivel de proyecto y debe
 
 Una vez tu configuración esta lista , tienes la opción de colocarla en tu sonar-scanner.properties o escribirla directamente en línea de comandos con la siguiente sintaxis: 
 ```
-<nombre de la ubicacion de tu archivo exportado (sonar-scanner, ej: /Users/cmaldonador/Desarrollo/sonar-scanner/bin/sonar-scanner)> -Dsonar.projectKey=<tu-projectKey> -Dsonar.sources=<tus-sources> -Dsonar.host.url=<tu-host.url> -Dsonar.login=<tu-login> -Dsonar.javascript.lcov.reportPaths=<tu-lcov.info> -Dsonar.coverage.exclusions=<tu-tests>
+<nombre de la ubicacion de tu archivo exportado (sonar-scanner, ej: /Users/cecilia/Desarrollo/sonar-scanner/bin/sonar-scanner)> -Dsonar.projectKey=<tu-projectKey> -Dsonar.sources=<tus-sources> -Dsonar.host.url=<tu-host.url> -Dsonar.login=<tu-login> -Dsonar.javascript.lcov.reportPaths=<tu-lcov.info> -Dsonar.coverage.exclusions=<tu-tests>
 ```
 
 # ¡ Listo tu proyecto tiene covertura !
